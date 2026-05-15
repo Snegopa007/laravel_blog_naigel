@@ -19,7 +19,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function() {
+Route::group(['prefix' => 'admin'], function() {
     Route::get('/', [MainController::class, 'index'])->name('admin.index');
     Route::resource('/categories', CategoryController::class);
 });
