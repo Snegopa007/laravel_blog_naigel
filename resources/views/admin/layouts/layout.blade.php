@@ -211,16 +211,41 @@
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
                                     <a href="{{ route('categories.index') }}" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
+                                        <i class="far fa-list-alt  nav-icon"></i>
                                         <p>Список категорий</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="{{ route('categories.create') }}" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
+                                        <i class="far fa-edit nav-icon"></i>
                                         <p>Новая категория</p>
                                     </a>
                                 </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-tags"></i>
+                                <p>
+                                    Теги
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="{{ route('tags.index') }}" class="nav-link">
+                                        <i class="far fa-list-alt  nav-icon"></i>
+                                        <p>Список тегов</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{ route('tags.create') }}" class="nav-link">
+                                        <i class="fa fa-edit nav-icon"></i>
+                                        <p>Новый тег</p>
+                                    </a>
+                                </li>
+
                             </ul>
                         </li>
 
@@ -265,7 +290,7 @@
         <!-- Content Wrapper. Contains page content -->
         @yield('content')
         <!-- /.content-wrapper -->
-        
+
 
         <footer class="main-footer">
             <div class="float-right d-none d-sm-block">
