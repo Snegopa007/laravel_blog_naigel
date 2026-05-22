@@ -695,7 +695,7 @@ div.tab button:hover {
     -o-transition: all .7s ease-in-out;
     -ms-transition: all .7s ease-in-out;
     transition: all .7s ease-in-out;
-    overflow: auto;
+    overflow: hidden;
 }
 
 
@@ -1673,4 +1673,22 @@ hr.invis3 {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 50%
+}
+
+.min-h-85 {
+    min-height: 85px;
+}
+
+.list-group-item-action:hover h5 {
+    color: #0a58ca; 
+}
+
+.market-header .form-inline .form-control.is-invalid {
+    border: 2px solid red;
+}
+
+.blog-content {
+    overflow-wrap: break-word; 
+    word-break: break-word;    
+    hyphens: auto;              
 }
